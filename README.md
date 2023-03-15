@@ -15,5 +15,5 @@ committing energy theft and reporting fraudulent meter readings.
 
 We are using an electricity consumption dataset released by State Grid Corporation of China (SGCC) which contains the electricity consumption data of 42,372 electricity customers within 1,035 days (1, 2014 to October 31, 2016).
 
-Link to dataset: https://drive.google.com/file/d/1xplUHpHIDizcRkvamVSchNhhZ4eAP9-d/view?usp=share_link
-Link to cleaned csv file (after dealing with null values and outliers): https://drive.google.com/file/d/14aAfMf-0GJ_WMqpr2Eg1shfoAP3FHAna/view?usp=share_link
+- Link to dataset: https://drive.google.com/file/d/1xplUHpHIDizcRkvamVSchNhhZ4eAP9-d/view?usp=share_link
+- Link to cleaned csv file (after dealing with null values and outliers): https://drive.google.com/file/d/14aAfMf-0GJ_WMqpr2Eg1shfoAP3FHAna/view?usp=share_link
