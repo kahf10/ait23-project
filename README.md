@@ -12,3 +12,5 @@ Malicious users are presented with the novel opportunity to hack into smart mete
 techniques. This illegal practice causes a vast amount of financial loss every year. Our objective is to exploit deep learning
 techniques to analyze the load profiles and electricity consumption patterns of users we are able to identify malicious energy users
 committing energy theft and reporting fraudulent meter readings. 
+
+We are using an electricity consumption dataset released by State Grid Corporation of China (SGCC) which contains the electricity consumption data of 42,372 electricity customers within 1,035 days (1, 2014 to October 31, 2016).
