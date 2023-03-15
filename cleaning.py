@@ -56,7 +56,7 @@ def main(df):
     """
     df = preprocess_mean(df)
     df = preprocess_outliers(df)
-    df.to_csv("output.csv")
+    df.to_csv("cleaned.csv")
 
 
 df = pd.read_csv("sgcc_data.csv")
