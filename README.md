@@ -20,6 +20,20 @@ We are using an electricity consumption dataset released by State Grid Corporati
 
 ## Documentation
 
+# Importing Data
+
+To load the dataset into the Colab Notebook, please follow these steps:
+
+1. Download the "cleaning.py" file.
+2. Open your Google Drive associated with the Colab Notebook account.
+3. Navigate to the "Colab Notebooks" folder.
+4. Upload the "cleaning.py" file to this folder.
+
+Once the file is uploaded, you can run the code to load the cleaned dataset.
+By following the above steps, the cleaned dataset will be successfully loaded into the Colab Notebook.
+
+Please ensure that you have the correct file name ("cleaning.py") and that it is placed in the designated folder ("Colab Notebooks") to avoid any issues with loading the dataset.
+
 # Data Preperation
 
 Meter reading data may contain erroneous data or missing data, which may be due to a variety of reasons, such as:
