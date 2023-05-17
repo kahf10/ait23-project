@@ -17,3 +17,34 @@ We are using an electricity consumption dataset released by State Grid Corporati
 
 - Link to dataset: https://drive.google.com/file/d/1xplUHpHIDizcRkvamVSchNhhZ4eAP9-d/view?usp=share_link
 - Link to cleaned csv file (after dealing with null values and outliers): https://drive.google.com/file/d/14aAfMf-0GJ_WMqpr2Eg1shfoAP3FHAna/view?usp=share_link
+
+## Documentation
+
+# Data Preperation
+
+Meter reading data may contain erroneous data or missing data, which may be due to a variety of reasons, such as:
+• Broken electrical components
+• Aging of resistors
+• Error of transmission
+• Bad connections
+To recover these missing values, the mean value method is used. In which the average value of each row is taken and
+utilized to fill any NULL value within such row.
+In addition, there are also some erroneous values (i.e., outliers) in the metering data. There for, we recover those
+values by using the “three-sigma rule of thumb”.
+In cases where the row values are beyond recoverable or usable data (i.e., the row is missing more than 50% of its
+data) the entire row is deleted to avoid faulty and skewed readings.
+We then prepared the training and testing sets by performing an 80:20 train-test split with stratification to ensure
+the percentage of fraudulent data is equal among the two sets and split each set into two groups: the readings, and their
+‘flags’ (whether the reading was legitimate or not).
+
+# Data Augmentation
+
+Data Augmentation is beneficial in improving performance and outcomes of classification models by developing new
+and distinct examples to train data sets. This can be accomplished by adding vaguely modified copies of previous data
+or synthesising data from available data sets. The augmentation method used in this project was SMOTE (Synthetic Minority Oversampling TEchnique).
+
+# Evaluation
+
+Previous solutions incorporated numerous machine learning techniques such as XGBoost, SVMs (Support Vector Machines), RF (Random Forest), and CatBoost. However, these solutions have very mixed results, having difficulty accurately flagging fradulent data points.
+
+So for our project, we incorporated a deep learning solution, as well as using data augmentation methods to highlight one of the possible ways to improve results outside of tuning models.
